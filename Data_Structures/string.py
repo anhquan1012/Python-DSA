@@ -4,11 +4,13 @@ a = 'hello'
 b = "Hello"
 print(a)
 print(b)
+
 #%%
 # We can use quotes inside a string, as long as they don't match the quotes surrounding the string
 c = "hello 'Paul'"
 d = 'hello "Paul"'
 print(c, d)
+
 # %%
 # Multiple lines. We can use three double quotes or three single quotes
 aa = """Lorem ipsum dolor sit amet,
@@ -22,6 +24,7 @@ ut labore et dolore magna aliqua.'''
 print(aa)
 print("----")
 print(bb)
+
 #%%
 # String is an array
 text = "Hello World!"
@@ -34,6 +37,7 @@ for c in text:
 print(len(text))
 ## Check if a string in another string
 print("hello" in text)
+
 #%%
 # Slice a string
 text = "Hello World!"
@@ -45,17 +49,20 @@ print(text[:3])
 print(text[2:])
 ## Use negative index to start from the end
 print(text[-5:-1])
+
 # %%
 # Concatenate
 a = "Hello"
 b = "World"
 c = a + " " + b
 c
+
 # %%
 # Placeholder and modifier
 price = 59
 txt = f"The price is {price:.2f} dollars"
 print(txt)
+
 # %%
 # Some methods
 ## Upper case
