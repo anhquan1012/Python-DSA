@@ -57,4 +57,27 @@ x.sort(reverse=True) # in-place sorting
 print(x)
 
 #%%
+import random
+#%%
 # List Comprehensions
+## Get values in a range
+under_10 = [x for x in range(10)]
+print("Under 10: ", under_10)
+## Get squared values
+squares = [x**2 for x in under_10]
+print("Squares: ", squares)
+## Get odd numbers
+odd = [x for x in under_10 if x%2==1]
+print("Odd: ", odd)
+## Get all numbers from a text
+text = "from 0 to 2 and from 3 to 9"
+numbers = [x for x in text if x.isnumeric()]
+print(f"Numbers in string '{text}' is {numbers}")
+## If-else in a comprehension
+nums = [5,8,2,5,9,10]
+new_nums = [x if x%2==0 else x*10 for x in nums]
+print(new_nums)
+## Nested loop for 2D list
+li = [[1,2],[3,4]]
+new_list = [x for li_ in li for x in li_]
+print(new_list)
