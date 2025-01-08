@@ -77,3 +77,7 @@ print(text.strip())
 print(text.replace("l", "i"))
 ## Split: return a list where the texts between the specified seperator becomes items
 print(text.split(","))
+## Join: join an array to string
+arr = ["Hello", "world!"]
+text = " ".join(arr)
+print(text)
